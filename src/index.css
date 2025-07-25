@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
-
-
 *::-webkit-scrollbar {
     display: none;
+}
+
+.r3f {
+    touch-action: auto;
 }
