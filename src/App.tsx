@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Experience } from "./components/Experience";
 import { Canvas } from "@react-three/fiber";
+import { Loader } from "@react-three/drei";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Experience />
         </Suspense>
       </Canvas>
+      <Loader />
     </article>
   );
 }
