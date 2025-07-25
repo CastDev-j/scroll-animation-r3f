@@ -6,18 +6,29 @@ import { Loader } from "@react-three/drei";
 function App() {
   return (
     <article className="w-full h-screen bg-pink-100">
-      <Canvas className="r3f" 
-      camera={
-        {
+      <Canvas
+        className="r3f"
+        camera={{
           fov: 65,
           position: [2.3, 1.5, 2.3],
-        }
-      }>
+        }}
+      >
         <Suspense fallback={null}>
           <Experience />
         </Suspense>
       </Canvas>
-      <Loader />
+      <Loader
+        containerStyles={{
+          backgroundColor: "#fce7f3",
+          color: "black",
+        }}
+        dataStyles={{
+          color: "black",
+        }}
+        barStyles={{
+          backgroundColor: "#ad25be",
+        }}
+      />
     </article>
   );
 }
